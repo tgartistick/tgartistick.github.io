@@ -2,117 +2,12 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>artistick — комната</title>
-<meta name="description" content="дверь была открыта. я не открывала.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Neucha&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/main.css">
+<meta name="robots" content="noindex">
+<script>
+  try { sessionStorage.setItem('artistick.room', '1'); } catch (e) {}
+  location.replace('./');
+</script>
 </head>
-<body class="page page--room">
-
-<div class="wall" aria-hidden="true"></div>
-
-<header class="room-head">
-  <p class="room-head__where">комната, которой нет на плане</p>
-  <a class="room-head__back" href="index.html">← обратно в темноту</a>
-</header>
-
-<main class="wallspace">
-
-  <p class="whisper whisper--a" aria-hidden="true">я всё ещё<br>здесь</p>
-  <p class="whisper whisper--b" aria-hidden="true">ты слышишь?</p>
-
-  <!-- кто здесь -->
-  <article class="paper sheet sheet--name">
-    <span class="tape tape--tl" aria-hidden="true"></span>
-    <span class="tape tape--tr" aria-hidden="true"></span>
-
-    <p class="scrawl scrawl--top">тут живёт</p>
-    <h1 class="sheet__name">artistick</h1>
-    <p class="sheet__lead">я всё ещё здесь.<br>наверное.</p>
-    <p class="typed">@artlstlck</p>
-  </article>
-
-  <!-- глаз -->
-  <figure class="photo">
-    <span class="tape tape--top" aria-hidden="true"></span>
-    <img src="assets/img/eye.gif" alt="глаз, который смотрит" width="640" height="640">
-    <figcaption>оно моргает, когда я отворачиваюсь</figcaption>
-  </figure>
-
-  <!-- вторая записка -->
-  <article class="paper sheet sheet--note">
-    <span class="tape tape--tl" aria-hidden="true"></span>
-    <span class="stain stain--note" aria-hidden="true"></span>
-
-    <p class="scrawl">я выключаю свет,<br>чтобы не видеть,<br>как оно смотрит.</p>
-    <p class="scrawl scrawl--red scrawl--aside">но оно не спит.</p>
-    <p class="typed typed--foot">написано ночью, без даты</p>
-  </article>
-
-  <!-- обрывок -->
-  <p class="scrap">если станет тихо —<br>не оборачивайся.</p>
-
-  <!-- телеграм -->
-  <article class="paper sheet sheet--contact">
-    <span class="tape tape--tl" aria-hidden="true"></span>
-    <span class="tape tape--br" aria-hidden="true"></span>
-
-    <p class="scrawl scrawl--top">если ещё помнишь,<br>как звучит мой голос —</p>
-
-    <a class="contact" href="https://t.me/artlstlck" target="_blank" rel="noopener">
-      <span class="contact__avatar">
-        <img src="assets/img/avatar.jpg" alt="аватар artistick" width="512" height="512" loading="lazy">
-      </span>
-      <span class="contact__text">
-        <span class="contact__name">Telegram</span>
-        <span class="contact__at">@artlstlck</span>
-      </span>
-      <span class="contact__arrow" aria-hidden="true">↗</span>
-    </a>
-
-    <p class="typed typed--foot">t.me/artlstlck — я отвечу не сразу</p>
-  </article>
-
-  <!-- звук -->
-  <aside class="paper sheet sheet--sound">
-    <span class="tape tape--top" aria-hidden="true"></span>
-    <p class="typed">сейчас играет</p>
-    <p class="sound__track">dan salvato —<br>i still love you</p>
-    <button class="sound__btn" type="button" data-sound>
-      <span data-sound-text>выключить</span>
-    </button>
-    <p class="sound__note">играет, пока ты не уйдёшь.</p>
-  </aside>
-
-  <!-- магазин -->
-  <article class="paper sheet sheet--shop">
-    <span class="tape tape--tl" aria-hidden="true"></span>
-    <span class="tape tape--br" aria-hidden="true"></span>
-
-    <p class="scrawl scrawl--top">если хочешь что-то забрать —</p>
-
-    <a class="contact contact--shop" href="https://t.me/artifizshop" target="_blank" rel="noopener">
-      <span class="contact__avatar contact__avatar--logo">
-        <img src="assets/img/shop.jpg" alt="логотип artistick" width="640" height="640" loading="lazy">
-      </span>
-      <span class="contact__text">
-        <span class="contact__name">artifizshop</span>
-        <span class="contact__at">@artifizshop</span>
-      </span>
-      <span class="contact__arrow" aria-hidden="true">↗</span>
-    </a>
-
-    <p class="typed typed--foot">t.me/artifizshop — то, что не поместилось здесь</p>
-  </article>
-
-  <p class="room-foot scrawl">закрой за собой, пожалуйста.</p>
-
-</main>
-
-<audio id="track" src="assets/audio/i-still-love-you.mp3" preload="auto" loop></audio>
-<script src="assets/js/sound.js"></script>
-</body>
+<body></body>
 </html>

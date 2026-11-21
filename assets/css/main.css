@@ -137,15 +137,19 @@ a{ color:inherit; }
    СТРАНИЦА 1 — дверь
    ========================================================= */
 
-.page--door{
+/* два экрана в одном документе — адрес не меняется */
+
+.view{ display:none; }
+
+.view--door{
   position:relative;
   min-height:100svh;
-  display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
   padding:clamp(60px,10vh,110px) clamp(16px,4vw,40px) clamp(80px,13vh,130px);
 }
+.view--door.is-active{ display:flex; }
 
 .eye-ghost{
   position:fixed;
@@ -273,10 +277,11 @@ a{ color:inherit; }
    СТРАНИЦА 2 — комната
    ========================================================= */
 
-.page--room{
+.view--room{
   position:relative;
   padding-top:clamp(58px,8vh,92px);
 }
+.view--room.is-active{ display:block; }
 
 .room-head{
   position:fixed;
@@ -612,7 +617,7 @@ a{ color:inherit; }
   .door__title{ font-size:clamp(56px,15vw,112px); }
   .eye-ghost{ width:min(84vw,440px); right:-16vw; bottom:0; opacity:.13; }
   .door__foot{ position:static; margin-top:clamp(20px,4vh,36px); font-size:8px; letter-spacing:.16em; }
-  .page--door{ padding-bottom:clamp(30px,6vh,60px); }
+  .view--door{ padding-bottom:clamp(30px,6vh,60px); }
   .room-head__where{ font-size:13px; }
   .room-head__back{ font-size:14px; }
   .sheet--note{ margin-top:0; }
